@@ -23,7 +23,13 @@ namespace SummerSchool
         *Need to be able to print a list of all students including money owed
         *Option 4 Exit -- Stop or Break
         */
+
         {
+            Console.WriteLine("1. Add Student");
+            Console.WriteLine("2. Remove Student");
+            Console.WriteLine("3. Print Student List");
+            Console.WriteLine("4. Exit");
+
             int choice = Convert.ToInt32(Console.ReadLine());
             switch (choice)
             {
@@ -49,7 +55,7 @@ namespace SummerSchool
 
         private static void Printstudent()
         {
-            for(int i = 0; i < Students.Length; i++);
+            for (int i = 0; i < Students.Length; i++) ;
             {
                 Console.WriteLine("Students");
             }
@@ -64,14 +70,13 @@ namespace SummerSchool
         {
             Console.WriteLine("Please enter student name");
             string student = Console.ReadLine();
-                
+
 
         }
 
-                }
-        }
+    }
+}
 
-    
 
-    
-    
+
+
