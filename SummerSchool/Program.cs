@@ -8,14 +8,70 @@ namespace SummerSchool
 {
     class Program
     {
+        static string[] Students = new string[15];
+
+        public static object Exit { get; private set; }
+
         static void Main(string[] args)
+
+        /*Beginning menu with all options listed
+        *Option 1 Enroll Student -- method
+        *Need to be able to add a student to the list in an available spot
+        *Option 2 Unenroll Student -- method
+        *Need to be able to remove a student from the list for an available spot
+        *Option 3 Print Student List -- method
+        *Need to be able to print a list of all students including money owed
+        *Option 4 Exit -- Stop or Break
+        */
         {
-            Console.WriteLine("1. Enroll a Student");
-            Console.WriteLine("2. Unenroll a student");
-            Console.WriteLine("3. Print out the list of enrolled students");
-            Console.WriteLine("4. Exit");
-            Console.WriteLine(">");
+            int choice = Convert.ToInt32(Console.ReadLine());
+            switch (choice)
+            {
+                case 1:
+                    Addstudent();
+                    break;
+
+                case 2:
+                    Removestudent();
+                    break;
+
+                case 3:
+                    Printstudent();
+                    break;
+
+                default:
+                    Console.WriteLine("Please choose option 1, 2, 3 or 4");
+                    break;
+            }
+
             Console.ReadKey();
         }
-    }
-}
+
+        private static void Printstudent()
+        {
+            for(int i = 0; i < Students.Length; i++);
+            {
+                Console.WriteLine("Students");
+            }
+        }
+
+        private static void Removestudent()
+        {
+            Console.WriteLine("");
+        }
+
+        private static void Addstudent()
+        {
+            Console.WriteLine("Please enter student name");
+            string student = Console.ReadLine();
+                
+
+        }
+
+                }
+        }
+
+    
+
+    
+    
