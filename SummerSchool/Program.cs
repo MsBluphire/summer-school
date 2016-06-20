@@ -25,6 +25,8 @@ namespace SummerSchool
         */
 
         {
+            //actual Menu user would see
+
             Console.WriteLine("1. Add Student");
             Console.WriteLine("2. Remove Student");
             Console.WriteLine("3. Print Student List");
@@ -71,11 +73,25 @@ namespace SummerSchool
             Console.WriteLine("Please enter student name");
             string student = Console.ReadLine();
 
-
+            int spot = NextSpot();
+                Students[spot] = student;
         }
 
+        private static int NextSpot()
+        {
+            for(int i = 0; i < Students.Length; i++)
+            {
+                if (Students[i] == null);
+                {
+                    return i;
+                }
+            }
+            return -1;
+        }
     }
-}
+        }
+
+
 
 
 
