@@ -55,9 +55,9 @@ namespace SummerSchool
             Console.ReadKey();
         }
 
-        private static void Printstudent()
+        static void Printstudent()
         {
-            for (int i = 0; i < Students.Length; i++) ;
+            for (int i = 0; i < Students.Length; i++);
             {
                 Console.WriteLine(Students);
             }
@@ -65,7 +65,9 @@ namespace SummerSchool
 
         private static void Removestudent()
         {
-            Console.WriteLine("");
+            Console.WriteLine("Please select a student to remove");
+            string student = Console.ReadLine();
+
         }
 
         private static void Addstudent()
