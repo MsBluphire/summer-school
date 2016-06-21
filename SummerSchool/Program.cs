@@ -25,6 +25,8 @@ namespace SummerSchool
         */
 
         {
+          
+                
             //actual Menu user would see
 
             Console.WriteLine("1. Add Student");
@@ -59,14 +61,20 @@ namespace SummerSchool
         {
             for (int i = 0; i < Students.Length; i++);
             {
-                Console.WriteLine(Students);
+                Console.Write(Students);
+              
             }
+            Console.Read();
         }
+
+
 
         private static void Removestudent()
         {
             Console.WriteLine("Please select a student to remove");
             string student = Console.ReadLine();
+
+           
 
         }
 
